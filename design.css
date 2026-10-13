@@ -3,20 +3,19 @@ html{
 }
 
 body{
-    background-color: #03071e;
+    background-color: #000;
     margin: 0;
 }
 
 * {
-  font-family: "Oswald", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
   color: #eaecf0;
 }
 
 .navbar{
-   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,6 +30,9 @@ body{
     width: 80%;
     box-sizing: border-box;
     z-index: 1000;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); 
 }
 .but{
     display: flex;
@@ -99,7 +101,7 @@ h1{
 .projects{
     height: 80vh;
 }
-body{
+/*body{
     margin: 0;
     background: linear-gradient(135deg, #03071e, #370617, #03071e, #0b1d51);
     background-size: 400% 400%;
@@ -111,7 +113,7 @@ body{
     50%  { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
-
+*/
 .p-con{
     display: flex;
     padding-left: 10%;
@@ -149,7 +151,7 @@ button{
 }
 .educ-tile{
     flex: 1;  
-    border: 2px solid white  
+    border: 2px solid black  
 }
 
 @media(width <= 728px){

@@ -30,3 +30,35 @@ function info(proj){
         window.location.href = "https://www.roblox.com/games/8015611165/Happy-Obby", "_self";
     }
 }
+
+function change(){
+
+    var mode = document.getElementById("mode");
+
+    if (mode.textContent == "Light"){
+        var body = document.getElementsByTagName("body")[0]
+        var p = document.getElementsByTagName("p");
+
+        body.style.backgroundColor = "#fff";
+
+        for(i = 0; i < p.length; i++){
+            p[i].style.color = "#000";
+        }
+
+        mode.textContent = "Dark"
+    }
+
+    else{
+        var body = document.getElementsByTagName("body")[0]
+        var p = document.getElementsByTagName("p");
+
+        body.style.backgroundColor = "#000";
+
+        for(i = 0; i < p.length; i++){
+            p[i].style.color = "#fff";
+        }
+
+        mode.textContent = "Light"
+    } 
+    
+}
