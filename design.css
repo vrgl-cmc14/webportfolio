@@ -16,6 +16,7 @@ body{
 }
 
 .navbar{
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,7 +97,7 @@ h1{
     object-fit: contain;
 }
 .projects{
-    height: 100vh;
+    height: 80vh;
 }
 body{
     margin: 0;
@@ -109,6 +110,46 @@ body{
     0%   { background-position: 0% 50%; }
     50%  { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
+}
+
+.p-con{
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 4%
+}
+.row-p{
+    flex: 1;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 2%;
+}
+.row-p-e{
+    flex: 1;
+    border-radius: 10px;
+    padding: 2%;
+}
+button{
+    width: 45%;
+    background-color: white;
+    color:#0b1d51
+}
+
+.p-buts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%
+}
+
+.educ-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.educ-tile{
+    flex: 1;  
+    border: 2px solid white  
 }
 
 @media(width <= 728px){
