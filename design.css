@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 body{
@@ -37,10 +38,10 @@ body{
 .but{
     display: flex;
     gap: 10%;
-    flex: 6;
+    flex: 7;
 }
 .logo-con{
-    flex: 3;
+    flex: 2;
     display: flex;
     justify-content: right;
 }
@@ -87,10 +88,10 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid whitesmoke 2px;
     border-radius: 10px;
     gap: 3%;
     padding: 15px;
+    background-color: #2a2a2a;
 }
 
 .skill img{
@@ -98,22 +99,11 @@ h1{
     height: 60px;
     object-fit: contain;
 }
+
 .projects{
     height: 80vh;
 }
-/*body{
-    margin: 0;
-    background: linear-gradient(135deg, #03071e, #370617, #03071e, #0b1d51);
-    background-size: 400% 400%;
-    animation: bgShift 3s ease infinite;
-}
 
-@keyframes bgShift{
-    0%   { background-position: 0% 50%; }
-    50%  { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-*/
 .p-con{
     display: flex;
     padding-left: 10%;
@@ -152,6 +142,31 @@ button{
 .educ-tile{
     flex: 1;  
     border: 2px solid black  
+}
+
+.mode{
+    background: none;
+    font-size: 30px;
+    color: white;
+    width: 15%;
+    border: none;
+}
+
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: white;
+  transform-origin: left;
+  animation: grow linear;
+  animation-timeline: scroll();
+}
+
+@keyframes grow {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
 }
 
 @media(width <= 728px){

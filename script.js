@@ -35,7 +35,7 @@ function change(){
 
     var mode = document.getElementById("mode");
 
-    if (mode.textContent == "Light"){
+    if (mode.textContent == "☀︎"){
         var body = document.getElementsByTagName("body")[0]
         var p = document.getElementsByTagName("p");
 
@@ -45,7 +45,7 @@ function change(){
             p[i].style.color = "#000";
         }
 
-        mode.textContent = "Dark"
+        mode.textContent = "⏾"
     }
 
     else{
@@ -58,7 +58,7 @@ function change(){
             p[i].style.color = "#fff";
         }
 
-        mode.textContent = "Light"
+        mode.textContent = "☀︎"
     } 
     
 }
