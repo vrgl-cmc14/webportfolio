@@ -287,7 +287,7 @@ button{
 
 .home-con{
     display: flex;
-    background-color: #2a2a2a;
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 50px;
 
 }
