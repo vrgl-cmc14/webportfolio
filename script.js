@@ -62,3 +62,10 @@ function change(){
     } 
     
 }
+
+function desc(){
+    var mabuhay = document.getElementsByClassName("me")[0]
+
+    mabuhay.classList.toggle("show");
+    
+}
