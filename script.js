@@ -69,3 +69,20 @@ function desc(){
     mabuhay.classList.toggle("show");
     
 }
+
+function contact(platform){
+    
+    if (platform == "mail"){
+        window.location.href = "mailto:virgiliolumbo14@gmail.com"
+    } else if (platform == "facebook"){
+        window.location.href = "https://www.facebook.com/14virgilio"
+    } else if (platform == "github"){
+        window.location.href = "https://github.com/vrgl-cmc14"
+    } else if (platform == "linkedin"){
+        window.location.href = "https://www.linkedin.com/in/lumbo-virgilio-ii-028a193b4"
+    } else if (platform == "discord"){
+        window.location.href = "https://discord.com/users/854023281320919080"
+    } else if (platform == "viber"){
+        
+    }
+}

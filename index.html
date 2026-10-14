@@ -48,7 +48,7 @@
             <br>
                 <div class="home-tile1">
                     <div>
-                        <h1 class="mabuhay" onclick="desc()">MABUHAY!!</h1>
+                        <h1 class="mabuhay" >MABUHAY!!</h1>
                         <h2>Greetings from Dev Virgilio!</h2>
                         <div class="me">
                             <h5>I am a third-year college IT student passionate about developing software and website 
@@ -210,7 +210,6 @@
                     <img src="asset/math companion.png" width="100%">
                     <div class="p-buts">
                         <button onclick="visit('MC')"> Visit</button>
-                        <button onclick="info('MC')"> Check Info</button>
                     </div>
                 </div>
                 
@@ -218,7 +217,6 @@
                     <img src="asset/RESERVATION SYSTEM.png" width="100%">
                     <div class="p-buts">
                         <button onclick="visit('SKY')"> Visit</button>
-                        <button> Check Info</button>
                     </div>
                 </div>
 
@@ -226,7 +224,6 @@
                     <img src="asset/3g wheels.png" width="100%">
                     <div class="p-buts">
                         <button onclick="visit('3G')"> Visit</button>
-                        <button> Check Info</button>
                     </div>
                 </div>
 
@@ -234,7 +231,6 @@
                     <img src="asset/answer.png" width="100%">
                     <div class="p-buts">
                         <button onclick="visit('AMB')"> Visit</button>
-                        <button> Check Info</button>
                     </div>
                 </div>
             </div>
@@ -250,7 +246,6 @@
                     <img src="asset/trustharbor.png" width="100%">
                     <div class="p-buts">
                         <button onclick="visit('THF')"> Visit</button>
-                        <button> Check Info</button>
                     </div>
                 </div>
 
@@ -258,7 +253,6 @@
                     <img src="asset/happy.png" width="100%">
                     <div class="p-buts">
                         <button onclick="visit('HO')"> Visit</button>
-                        <button> Check Info</button>
                     </div>
                 </div>
 
@@ -283,21 +277,21 @@
             <br>
             <div class="cont-con">
                 <div class="cont-row">
-                    <div class="cont-tile">
+                    <div class="cont-tile" onclick="contact('facebook')">
                         <div class="cont-img-con">
                             <img src="asset/facebook logo.png" width="25%">
                         </div>
                         
                         <p class="cont-text"> virgilio lumbo </p>
                     </div>
-                    <div class="cont-tile">
-                        <div class="cont-img-con">
+                    <div class="cont-tile" onclick="contact('mail')">
+                        <div class="cont-img-con" id="mail">
                             <img src="asset/email logo.png" width="25%">
                         </div>
                         
                         <p class="cont-text"> virgiliolumbo14@gmail.com</p>
                     </div>
-                    <div class="cont-tile">
+                    <div class="cont-tile" onclick="contact('github')">
                         <div class="cont-img-con">
                             <img src="asset/github.png" width="25%">
                         </div>
@@ -311,14 +305,14 @@
                 <br>
 
                 <div class="cont-row">
-                    <div class="cont-tile">
+                    <div class="cont-tile" onclick="contact('linkedin')">
                         <div class="cont-img-con">
                             <img src="asset/linkedin.png" width="25%">
                         </div>
                         
                         <p class="cont-text"> Lumbo, Virgilio II </p>
                     </div>
-                    <div class="cont-tile">
+                    <div class="cont-tile" onclick="contact('discord')">
                         <div class="cont-img-con">
                             <img src="asset/discord.png" width="25%">
                         </div>
