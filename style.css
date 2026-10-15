@@ -443,6 +443,22 @@ h2{
     .p-buts button{
         font-size: 7px;
     }
+    p{
+        font-size: 9px;
+    }
+    h5{
+        font-size: 10px;
+    }
+    .mabuhay{
+        font-size: 50px;
+    }
+    .home-tile1 div h2{
+        font-size: 20px;
+        margin-top: -11%;
+    }
+    .home{
+        margin-top: 5%;
+    }
 }
 
 @media(width < 428px){
