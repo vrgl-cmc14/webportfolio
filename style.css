@@ -104,7 +104,6 @@ h2{
 }
 
 .skills-con{
-    min-height: 100vh;
     box-sizing: border-box;
     padding-bottom: 5%;
 }
@@ -398,6 +397,51 @@ h2{
 
     50% {
         transform: translateY(0px);
+    }
+}
+
+@media (width < 1033px) {
+    a{
+        font-size: 11px;
+    }
+    .aboutme-con{
+        margin-top: 0%;
+        padding-top: 2%;
+    }
+    .skills{
+        padding-top: 5%;
+        margin-top: 2%;
+    }
+    .skills-con{
+        margin-bottom: 1%;
+        padding-bottom: 0%;
+    }
+    p{
+        font-size: 11px;
+    }
+    .cont-text{
+        font-size: 11px;
+    }
+    .contact{
+        margin-bottom: 7%;
+    }
+    .skill img{
+        width: 15%
+    }
+    .p-buts button{
+        font-size: 9px;
+    }
+    .mode{
+        font-size: 20px;
+    }
+}
+
+@media (width < 769px) {
+    a{
+        font-size: 9px;
+    }
+    .p-buts button{
+        font-size: 7px;
     }
 }
 
