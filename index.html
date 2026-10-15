@@ -2,35 +2,31 @@
 <html>
     <head>
         <title>Virgilio Lumbo</title>
-        <link rel="stylesheet" href="design.css">
+        <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="script.js"></script>
+        <script src="scriptt.js" defer></script>
     </head>
     <body>
         <div class="stars-dw"></div>
+        <div class="stars-wm"></div>
         <nav class="navbar">
             <div class="logo-con">
-                <img class="logo" src="asset/vlii-w.png" width="30%">
+                <img class="logo" id="logo-d" src="asset/vlii-w.png" width="30%">
+                <img class="logo" id="logo-l" src="asset/vl2-b-2-final.png" width="28%">
             </div>
-            <div class="but">
+            <div class="but" id="but">
                 <a href="#home"> HOME </a>
                 <a href="#about"> EDUCATION </a>
                 <a href="#skills"> STACK</a>
                 <a href="#projects"> PROJECTS</a>
                 <a href="#contacts"> CONTACTS </a>
             </div>
-            <div class="hamburger">
+            <div class="hamburger" onclick="expand()">
                 <p>▽</p>
             </div>
 
@@ -50,7 +46,7 @@
                         <h2>Greetings from Dev Virgilio!</h2>
                         <div class="me">
                             <h5>I am a third-year college IT student passionate about developing software and website 
-                            systems, as well as gaming. I enhjoy working on personal projects during my free time, 
+                            systems, as well as gaming. I enjoy working on personal projects during my free time, 
                             applying the knowledge and skills I have gained. 
                             I am eager to continue learning about programming and open to advice and constructive 
                             criticism that can help improve and develop my skills </h5>
@@ -113,7 +109,7 @@
                 </div>
             </div>
 
-            <div class="row" id="skills">
+            <div class="row">
                 <div class="skill">
                     <img src="asset/PHPlogo.png" width="15%">
                     <p>php</p>
@@ -177,21 +173,24 @@
             <h1>PROJECTS</h1>
             <div class="p-con">
                 <div class="row-p">
-                    <img src="asset/math companion.png" width="100%">
+                    <img class="dark-pic" src="asset/math companion.png" width="100%">
+                    <img class="light-pic" src="asset/mc-logo-light.png" width="100%">
                     <div class="p-buts">
                         <button onclick="visit('MC')"> Visit</button>
                     </div>
                 </div>
                 
                 <div class="row-p">
-                    <img src="asset/RESERVATION SYSTEM.png" width="100%">
+                    <img class="dark-pic" src="asset/RESERVATION SYSTEM.png" width="100%">
+                    <img class="light-pic" src="asset/sky-logo-light.png" width="100%">
                     <div class="p-buts">
                         <button onclick="visit('SKY')"> Visit</button>
                     </div>
                 </div>
 
                 <div class="row-p">
-                    <img src="asset/3g wheels.png" width="100%">
+                    <img class="dark-pic" src="asset/3g wheels.png" width="100%">
+                    <img class="light-pic" src="asset/3g-logo-light.png" width="100%">
                     <div class="p-buts">
                         <button onclick="visit('3G')"> Visit</button>
                     </div>
@@ -235,21 +234,24 @@
                 <div class="cont-row">
                     <div class="cont-tile" onclick="contact('facebook')">
                         <div class="cont-img-con">
-                            <img src="asset/facebook logo.png" width="25%">
+                            <img class="dark-pic" src="asset/facebook logo.png" width="25%">
+                            <img class="light-pic" src="asset/fb-black.png" width="25%">
                         </div>
                         
                         <p class="cont-text"> virgilio lumbo </p>
                     </div>
                     <div class="cont-tile" onclick="contact('mail')">
                         <div class="cont-img-con" id="mail">
-                            <img src="asset/email logo.png" width="25%">
+                            <img class="dark-pic" src="asset/email logo.png" width="25%">
+                            <img class="light-pic" src="asset/email-black.png" width="25%">
                         </div>
                         
                         <p class="cont-text"> virgiliolumbo14@gmail.com</p>
                     </div>
                     <div class="cont-tile" onclick="contact('github')">
                         <div class="cont-img-con">
-                            <img src="asset/github.png" width="25%">
+                            <img class="dark-pic" src="asset/github.png" width="25%">
+                            <img class="light-pic" src="asset/git-black.png" width="25%">
                         </div>
                         
                         <p class="cont-text"> vrgl-cmc14 </p>
@@ -259,21 +261,24 @@
                 <div class="cont-row">
                     <div class="cont-tile" onclick="contact('linkedin')">
                         <div class="cont-img-con">
-                            <img src="asset/linkedin.png" width="25%">
+                            <img class="dark-pic" src="asset/linkedin.png" width="25%">
+                            <img class="light-pic" src="asset/linked-black.png" width="25%">
                         </div>
                         
                         <p class="cont-text"> Lumbo, Virgilio II </p>
                     </div>
                     <div class="cont-tile" onclick="contact('discord')">
                         <div class="cont-img-con">
-                            <img src="asset/discord.png" width="25%">
+                            <img class="dark-pic" src="asset/discord.png" width="25%">
+                            <img class="light-pic" src="asset/discord-black.png" width="25%">
                         </div>
                         
                         <p class="cont-text"> v1r0_ii </p>     
                     </div>
                     <div class="cont-tile">
                         <div class="cont-img-con">
-                            <img src="asset/viber.png" width="25%">
+                            <img class="dark-pic" src="asset/viber.png" width="25%">
+                            <img class="light-pic" src="asset/viber-black.png" width="25%">
                         </div>
                         
                         <p class="cont-text"> +639294959951 </p> 
