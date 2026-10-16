@@ -33,6 +33,8 @@ function info(proj){
 
 function change(){
 
+    document.body.classList.toggle("light");
+
     var mode = document.getElementById("mode");
     var body = document.getElementsByTagName("body")[0];
     var nav = document.getElementsByTagName("nav")[0];
@@ -200,7 +202,38 @@ function contact(platform){
 }
 
 function expand(){
-    var nav = document.getElementById("but");
+    var menu = document.getElementById("but");
+    var icon = document.querySelector(".hamburger p");
 
-    nav.style.display = "block";
+    menu.classList.toggle("open");
+    icon.textContent = menu.classList.contains("open") ? "△" : "▽";
 }
+
+var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        } else {
+            entry.target.classList.remove("show");
+        }
+    });
+}, { threshold: 0.15 });
+
+document.querySelectorAll(".educ-tile, .skill, .row-p, .cont-tile").forEach(function(tile){
+    tile.classList.add("reveal");
+    observer.observe(tile);
+});
+
+document.querySelectorAll(".but a").forEach(function(link){
+    link.addEventListener("click", function(){
+
+        document.getElementById("but").classList.remove("open");
+        document.querySelector(".hamburger p").textContent = "▽";
+
+        var section = document.querySelector(link.getAttribute("href"));
+        section.querySelectorAll(".reveal").forEach(function(tile){
+            tile.classList.remove("show");
+            setTimeout(function(){ tile.classList.add("show"); }, 600);
+        });
+    });
+});
