@@ -493,6 +493,13 @@ h2{
         backdrop-filter: blur(10px);
     }
 
+    .aboutme-con{
+        padding-top: 10%;
+    }
+
+    .skills{
+        padding-top: 15%;
+    }
     .but.open{
         display: flex;
     }
@@ -663,9 +670,14 @@ h2{
         margin-bottom: 0%;
     }
 
+    .projects{
+        padding-top: 10%;
+    }
+
     .contact{
         margin-top: 1%;
         margin-bottom: 10%;
+        padding-top: 10%;
     }
 
     .cont-con{
